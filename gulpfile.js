@@ -37,7 +37,9 @@ gulp.task('stylus', function () {
 gulp.task('watch', function() {
     var server = livereload();
     gulp.watch('./*.html').on('change', function (file) {
-        server.changed(file.path);
+        var d = new Date(),
+            time = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+        server.changed(file.path + ' ' + time);
     });
     gulp.watch(paths.scripts, ['uglify']);
     gulp.watch(paths.styles, ['stylus']);

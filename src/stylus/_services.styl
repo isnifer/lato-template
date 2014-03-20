@@ -1,0 +1,60 @@
+.services
+  padding 60px 10px
+  background #f2f2f2
+  border-bottom 6px solid #fff
+
+  &__header
+    color #666d89
+    font-size 30
+    font-weight 700
+    margin-bottom 30px
+
+  &__description
+    font-size 18
+    font-weight 300
+    color #767e9e
+    margin 0 0 30px
+
+  &__item
+    padding 0 0 0 80px
+    position relative
+    
+    &:before
+      display block
+      width 59px
+      height 59px
+      background url(../img/services/icons.png) no-repeat 0 0
+      content ""
+      position absolute
+      top 0
+      left 0
+
+    &_ideas:before
+      background-position -59px 0
+
+    &_love:before
+      background-position -118px 0
+
+    &_ideas:before
+      background-position 0 -59px
+
+    &_ideas:before
+      background-position -59px -59px
+
+    &_ideas:before
+      background-position -118px -59px 
+
+  &__item-title
+    color #666d89
+    font-weight 700
+    font-size 18
+
+  &__item-text
+    color #767e9e
+    font-size 12
+    width 220px
+    line-height (22/12)
+    text-align justify
+
+  .row
+    padding 12.5px 0

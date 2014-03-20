@@ -1,6 +1,9 @@
 // Small devices (tablets, 768px and up)
 @media (min-width: 768px)
 
+  .grid
+    width 750px
+
   [class*="column_sm-"]
     float left
 
@@ -10,8 +13,16 @@
 
     createOffset(sm, 12)
 
+  .slider
+    
+    .grid
+      width 640px
+
 // Medium devices (desktops, 992px and up)
 @media (min-width: 992px)
+
+  .grid
+    width 960px
 
   [class*="column_md-"]
     float left
@@ -21,6 +32,19 @@
     setColumn(md, 12)
 
     createOffset(md, 12)
+
+  .slider
+    
+    .grid
+      width 820px
+
+  .about
+    
+    &__photo-item
+      text-align left
+
+    &__photo-img
+      width auto
 
 // Large devices (large desktops, 1200px and up)
 @media (min-width: 1170px)

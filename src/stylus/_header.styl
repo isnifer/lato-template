@@ -1,5 +1,42 @@
 /* Шапка */
 .header
+  height 95px
+  background #2d303a
+  border-bottom 6px solid #323746
+  color #fff
   font-weight bold
-  font-size 3em
-  margin-bottom 30px
+  font-size 25
+  text-transform uppercase
+
+  &__star
+    color #f06c64
+
+  &__list
+    margin 0
+    padding 4px 0 0
+    list-style none
+    font-size 12
+    text-transform uppercase
+    text-align center
+    overflow hidden
+
+  &__item
+    display inline-block
+    margin-left 13px
+
+    &:first-child
+      margin 0
+
+  &__link
+    color #fff
+    text-decoration none
+    -webkit-transition color 0.3s ease
+    -moz-transition color 0.3s ease
+    transition color 0.3s ease
+
+    &:hover
+      color #f06c64
+
+  .grid
+    padding-top 30px
+    padding-bottom 30px
