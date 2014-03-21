@@ -16,7 +16,6 @@
     margin 0 0 30px
 
   &__item
-    padding 0 0 0 80px
     position relative
     
     &:before
@@ -27,7 +26,7 @@
       content ""
       position absolute
       top 0
-      left 0
+      left 10px
 
     &_ideas:before
       background-position -59px 0
@@ -43,6 +42,9 @@
 
     &_ideas:before
       background-position -118px -59px 
+
+    &.column
+      padding 0 0 0 80px
 
   &__item-title
     color #666d89
