@@ -677,6 +677,25 @@ body
 
     resize: vertical;
 }
+.quote__submit
+{
+    font-size: 1em;
+
+    float: right;
+
+    height: 38px;
+    padding: 0 30px;
+
+    color: #f48c8f;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background: #bd4a44;
+}
+.quote__submit:hover
+{
+    background: #d6564f;
+}
 .quote__info
 {
     color: #f0d8d9;
